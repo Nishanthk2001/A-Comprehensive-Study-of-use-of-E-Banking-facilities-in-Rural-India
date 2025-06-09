@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Study of E-Banking Facilities in Rural India</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Softer, slightly blue-grey background */
+            color: #2d3748; /* Darker, more professional text */
+        }
+        .container {
+            max-width: 960px;
+        }
+        .section-header {
+            border-bottom: 3px solid #2563eb; /* Vibrant blue underline */
+            padding-bottom: 0.75rem;
+            margin-bottom: 2rem;
+            color: #1a365d; /* Dark blue for main headers */
+            text-align: center;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 1rem; /* More rounded corners */
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Stronger shadow */
+            padding: 2.5rem;
+            margin-bottom: 2.5rem;
+            transition: transform 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px); /* Subtle lift on hover */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1.5rem;
+        }
+        th, td {
+            border: 1px solid #e2e8f0; /* Slightly darker light grey border */
+            padding: 0.9rem;
+            text-align: left;
+        }
+        th {
+            background-color: #e0f2fe; /* Very light blue for table headers */
+            font-weight: 700;
+            color: #2a4365; /* Dark blue for header text */
+        }
+        .figure-container {
+            background-color: #f7fafc; /* Lighter background for figures */
+            border: 1px solid #cbd5e0; /* Subtle border */
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05); /* Inner shadow */
+        }
+        /* SVG chart specific styles */
+        .chart-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #1a365d;
+        }
+        .bar-chart-bar { /* Reverted to single class for simple bars */
+            fill: #4299e1; /* Blue for bars */
+            transition: fill 0.3s ease;
+        }
+        .bar-chart-bar:hover {
+            opacity: 0.8;
+        }
+        .pie-chart-slice {
+            stroke: white;
+            stroke-width: 2px;
+            transition: transform 0.3s ease;
+        }
+        .pie-chart-slice:hover {
+            transform: scale(1.05);
+        }
+        .scree-plot-line {
+            fill: none;
+            stroke: #9b2c2c; /* Red for scree plot line */
+            stroke-width: 3px;
+        }
+        .scree-plot-point {
+            fill: #c53030; /* Darker red for points */
+            stroke: white;
+            stroke-width: 1px;
+        }
+
+        .visual-suggestion {
+            display: none; /* Hide visual suggestion divs */
+        }
+        .sub-header {
+            color: #2d3748; /* Dark text for sub-headers */
+            border-bottom: 1px dashed #a0aec0; /* Dashed subtle line */
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            margin-top: 1.5rem;
+        }
+        .footer {
+            background-color: #e2e8f0; /* Light grey-blue for footer */
+            padding: 2rem;
+            text-align: center;
+            border-radius: 1rem;
+            margin-top: 3rem;
+            color: #4a5568;
+            font-size: 0.9rem;
+            box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.05);
+        }
+        .footer a {
+            display: inline-block;
+            background-color: #2563eb; /* Blue button */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            margin-top: 1rem;
+        }
+        .footer a:hover {
+            background-color: #1a56c0; /* Darker blue on hover */
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8">
+    <div class="container mx-auto">
+        <!-- Header Section -->
+        <header class="text-center mb-10 p-6 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-xl shadow-lg">
+            <h1 class="text-4xl sm:text-5xl font-extrabold mb-3 tracking-tight">A Comprehensive Study of Use of E-Banking Facilities in Rural India</h1>
+            <p class="text-lg sm:text-xl font-light mb-4">Department of Commerce, Manipal Academy of Higher Education</p>
+            <div class="flex flex-wrap justify-center gap-x-8 text-md sm:text-lg font-medium">
+                <span>Nishanth Kumar (232626014)</span>
+                <span>Akash A Shetty (232626025)</span>
+                <span>Creig Luke Picado (232626036)</span>
+                <span>Vignesh Kamath Sevgur (232626012)</span>
+                <span>Hari Shankar Arun C (232626033)</span>
+            </div>
+            <p class="text-md font-light mt-3">Under the guidance of Dr. Rita Rani Chopra</p>
+        </header>
+
+        <!-- Abstract Section -->
+        <section class="card">
+            <h2 class="text-3xl font-bold section-header">Abstract</h2>
+            <p class="mb-4 text-gray-700 leading-relaxed">
+                The rise of electronic banking (e-banking) presents a significant opportunity to enhance financial inclusion, particularly in rural areas lacking traditional banking infrastructure. The country's economic trajectory hinges on the growth and effectiveness of the banking sector, with innovative solutions like mobile banking and digital payments playing a crucial role in boosting financial inclusion and economic development. Consequently, countries like India are prioritizing the automation of their banking industry.
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+                This study examines the impact of electronic banking facilities in rural areas, focusing on aspects such as accessibility, adoption, challenges, trust, and satisfaction levels. It also delves into how age and trust influence adoption behaviors, using factor analysis to explore their relationship and implications for digital financial service uptake in rural communities. The research sheds light on how generational disparities and levels of trust affect the diffusion of e-banking innovations in rural settings, aiming to provide deeper insights into the diverse nature of e-banking adoption behaviors and the underlying mechanisms driving them.
+            </p>
+            <p class="text-gray-600 text-sm mt-4">
+                <span class="font-semibold">Keywords:</span> rural, e-banking, India, impact
+            </p>
+            <div class="visual-suggestion">
+                <strong>Visual Suggestion:</strong> An infographic depicting the "journey" of financial inclusion in rural India, highlighting the role of e-banking, perhaps using illustrative icons and a clear flow.
+            </div>
+        </section>
+
+        <!-- Introduction Section -->
+        <section class="card">
+            <h2 class="text-3xl font-bold section-header">Introduction</h2>
+            <h3 class="text-2xl font-semibold sub-header">Banking</h3>
+            <p class="mb-4 text-gray-700 leading-relaxed">
+                Banks are vital to the economy, offering essential financial services like secure cash storage, various account options (checking, savings, CDs), and facilitating everyday transactions (deposits, withdrawals, bill payments). They also provide loans for homes, cars, and businesses, injecting liquidity and stimulating economic activity. Banks profit by charging higher interest rates on loans than on deposits.
+            </p>
+            <h3 class="text-2xl font-semibold sub-header">Electronic Banking</h3>
+            <p class="mb-4 text-gray-700 leading-relaxed">
+                Electronic banking revolutionizes financial services by enabling online access to standard banking activities such as opening accounts, transferring funds, and paying bills. It can supplement physical branches or exist as entirely virtual banks. Originating in Finland, electronic banking gained prominence globally, with pioneers like ICICI Bank introducing it in India as early as 1997 under the name Infinity. Also known as online banking, cyber banking, or virtual banking, electronic banking encompasses a range of activities accessible from anywhere, including RTGS, NEFT, ECS, credit and debit card services, check truncation, ATMs, telephone banking, internet banking, and mobile banking. In essence, electronic banking facilitates secure financial transactions through various delivery platforms like personal computers, mobile phones, telephones, and digital televisions, providing customers with flexibility and convenience.
+            </p>
+            <div class="visual-suggestion">
+                <strong>Visual Suggestion:</strong> A timeline graphic showing the evolution of banking in India, with key milestones for traditional and electronic banking, using clear dates and icons.
+            </div>
+        </section>
+
+        <!-- Literature Review Section -->
+        <section class="card">
+            <h2 class="text-3xl font-bold section-header">Literature Review</h2>
+            <ul class="list-disc pl-8 text-gray-700 leading-relaxed">
+                <li class="mb-3"><strong>[1] Liebana-Cabanillas, Muñoz-Leiva, and Rejón-Guardia (2012):</strong> Conducted a study focusing on the factors that contribute to customer satisfaction with e-banking. Using secondary data from a financial institution's survey, they found that consumers generally prefer online banking and are satisfied with electronic banking services.</li>
+                <li class="mb-3"><strong>[2] Monisha, Bhudhiraja, and Kaur (2017):</strong> Examined the state of e-banking in India, highlighting the need for innovation and identifying challenges such as security risks and low computer literacy that hinder e-banking's progress. Their study, based on secondary data from RBI bulletins and reports, indicated that despite its growing popularity, these challenges persist.</li>
+                <li class="mb-3"><strong>[3] Wadhe (2015):</strong> Analysed the impact of e-banking on the profitability of commercial banks in India, finding significant growth and increased profits among banks that implemented electronic banking systems. The study categorized 31 banks and used secondary data, concluding that e-banking adoption leads to financial benefits.</li>
+                <li class="mb-3"><strong>[4] Dixit and Datta (2010):</strong> Explored the acceptance of electronic banking among adults over 35, revealing a positive trend towards acceptance. Their primary survey indicated increasing interest in online banking, though it was limited by factors such as education and computer literacy.</li>
+                <li class="mb-3"><strong>[5] Agarwal, Rastogi, and Mehrotra (2009):</strong> Investigated customers' perspectives on e-banking in Northern India, finding that trust and security are crucial factors influencing usage. Based on primary data collected via questionnaires, their study focused on customer satisfaction and perceptions of electronic banking.</li>
+                <li class="mb-3"><strong>[6] Sandhu and Arora (2020):</strong> Studied the usage behaviour of e-banking services, identifying preferences for debit/credit cards and ATMs among respondents from Luciana, Jalandhar, and Amritsar. The primary data collection revealed that a lack of awareness hindered the use of other e-banking services.</li>
+                <li class="mb-3"><strong>[7] Bamoriya (2011):</strong> Examined the issues and challenges of mobile banking in urban India, finding that while opinions were generally positive, security concerns remained prevalent. The study used primary data from questionnaires to assess urban dwellers' perspectives.</li>
+                <li class="mb-3"><strong>[8] Rajasekhar, Anit, and Madhavi (2015):</strong> Analysed the impact of service quality of SBI's e-banking on rural customers, emphasizing the importance of convenience and accessibility. Using the e-SERQUAL model, their research suggested that tailored educational initiatives and user-friendly designs could enhance trust and adoption in rural areas.</li>
+                <li class="mb-3"><strong>[9] Sharma (2012):</strong> Assessed rural customers' satisfaction with e-banking, noting low comfort levels among non-graduates and recommending the promotion of regional languages to increase adoption. The study used primary data to advocate for regional language support in e-banking transactions.</li>
+                <li class="mb-3"><strong>[10] Bapat (2010):</strong> Investigated the effectiveness of banking services in rural India, highlighting factors such as education, occupation, and income that influence banking effectiveness. The study concluded with a satisfaction index and recommended tailored approaches to achieve financial inclusion and upliftment in rural areas.</li>
+            </ul>
+        </section>
+
+        <!-- Need & Objective of Study Section -->
+        <section class="card">
+            <h2 class="text-3xl font-bold section-header">Need & Objective of Study</h2>
+            <h3 class="text-2xl font-semibold sub-header">Need of Study</h3>
+            <p class="mb-4 text-gray-700 leading-relaxed">
+                The majority of existing research has primarily examined the utilization and effects of electronic banking (e-banking) in urban settings and the technological advancements in India's banking sector. This study, however, seeks to investigate the adoption and consequences of e-banking specifically within rural communities.
+            </p>
+            <h3 class="text-2xl font-semibold sub-header">Objectives</h3>
+            <ul class="list-decimal pl-8 text-gray-700 leading-relaxed">
+                <li class="mb-2">Investigate the utilization of electronic banking (e-banking) services among rural populations.</li>
+                <li class="mb-2">Assess the level of trust rural individuals have in e-banking.</li>
+                <li class="mb-2">Understand the attitudes and perceptions of rural communities towards e-banking services.</li>
+            </ul>
+        </section>
+
+        <!-- Limitations Section -->
+        <section class="card">
+            <h2 class="text-3xl font-bold section-header">Limitations of the Study</h2>
+            <p class="mb-4 text-gray-700 leading-relaxed">
+                The research relies on data obtained from a survey conducted with 120 individuals, both users and non-users of e-banking services. Nevertheless, it's crucial to acknowledge that the results may be impacted by variables such as sample size, geographic location, as well as the financial and emotional traits of the participants surveyed.
+            </p>
+        </section>
+
+        <!-- Research and Methodology Section -->
+        <section class="card">
+            <h2 class="text-3xl font-bold section-header">Research and Methodology</h2>
+            <h3 class="text-2xl font-semibold sub-header">Data Collection</h3>
+            <p class="mb-4 text-gray-700 leading-relaxed">
+                The research relies on primary data obtained through a questionnaire distributed among rural residents, including both users and non-users of e-banking, from various regions within Udupi district, such as Hebri, Brahmavar, and Kundapur. The questionnaire consists of 21 general inquiries, with variable selection informed by prior research efforts.
+            </p>
+            <h3 class="text-2xl font-semibold sub-header">Analysis of Data</h3>
+            <p class="mb-4 text-gray-700 leading-relaxed">
+                The gathered data underwent analysis using IBM statistical software SPSS 27.0. Tests such as Kaiser-Meyer-Olkin and Bartlett's were performed to assess the adequacy of the sample data. In order to address multicollinearity issues, the degree of correlation was assessed. Upon identifying collinearity concerns, factor analysis was employed as a means of dimension reduction. Additionally, Linear Discriminant Analysis was utilized to gauge the level of trust in e-banking among rural individuals.
+            </p>
+        </section>
+
+        <!-- Findings and Analysis Section -->
+        <section class="card">
+            <h2 class="text-3xl font-bold section-header">Findings and Analysis</h2>
+
+            <h3 class="text-2xl font-semibold sub-header">Education Level of Participants</h3>
+            <p class="mb-4 text-gray-700 leading-relaxed">
+                The majority of respondents are Graduates, with less than 15% having not cleared class 10. Below is a bar chart showing the distribution across different education levels.
+            </p>
+            <div class="figure-container">
+                <div id="education-bar-chart" class="w-full h-auto" style="min-height: 450px;"></div>
+                <p class="text-sm text-gray-600 mt-2">Figure 1: Education Level of Participant</p>
+            </div>
+
+            <h3 class="text-2xl font-semibold sub-header">Most Preferred Banking Service</h3>
+            <p class="mb-4 text-gray-700 leading-relaxed">
+                UPI is the most preferred banking service, a result of its widespread adoption in 2017-2018 for quick and seamless transactions, and its integration by financial institutions. This is highlighted in the pie chart below.
+            </p>
+            <div class="figure-container">
+                <div id="preferred-banking-pie-chart" class="w-full h-auto" style="min-height: 400px;"></div>
+                <p class="text-sm text-gray-600 mt-2">Figure 2: Most Preferred Banking Service</p>
+            </div>
+
+            <h3 class="text-2xl font-semibold sub-header">Descriptive Statistics (Summary from Table 1)</h3>
+            <ul class="list-disc pl-8 mb-4 text-gray-700 leading-relaxed">
+                <li>85% of participants own a smartphone.</li>
+                <li>97% have a bank account.</li>
+                <li>70% have good internet access.</li>
+                <li>62% are aware of banking services.</li>
+                <li>75% find e-banking transactions easier.</li>
+                <li>72% think e-banking is safe and secure.</li>
+                <li>81% would suggest others to use e-banking.</li>
+                <li>71% have QR codes in shops in their area.</li>
+                <li>78% have ATM facilities in their area.</li>
+                <li>46% are aware of Government initiatives related to banking.</li>
+            </ul>
+
+            <h3 class="text-2xl font-semibold sub-header">Testing Sampling Adequacy (KMO and Bartlett's Test)</h3>
+            <ul class="list-disc pl-8 mb-4 text-gray-700 leading-relaxed">
+                <li><strong class="text-blue-700">Kaiser-Meyer-Olkin (KMO) Measure:</strong> 0.912 (very high, suitable for factor analysis).</li>
+                <li><strong class="text-blue-700">Bartlett's Test of Sphericity:</strong> Chi-Square = 1230.133, df = 171, Sig. = 0.000 (variables are significantly correlated).</li>
+            </ul>
+
+            <h3 class="text-2xl font-semibold sub-header">Analysis of Multi-collinearity (Correlation Matrix - Table 3 Summary)</h3>
+            <p class="mb-4 text-gray-700 leading-relaxed">
+                The study estimates correlation of each variable to other variables for detecting the multi-collinearity of data. The maximum value of correlation is 0.651 which exists between education level and owning a smartphone. The least correlation is -0.567 which exists between age and owning a smartphone. The result of correlation depicts the problem of co-linearity (as some variables have more than 0.50 degree of correlation). Therefore, factor analysis has been done as a tool of data reduction.
+            </p>
+
+            <h3 class="text-2xl font-semibold sub-header">Factor Analysis</h3>
+            <p class="mb-4 text-gray-700 leading-relaxed">
+                A statistical method called factor analysis is used to reduce a large number of different variables into a manageable number that can adequately account for observed variance.
+            </p>
+            <ul class="list-disc pl-8 mb-4 text-gray-700 leading-relaxed">
+                <li><strong class="text-blue-700">Communalities (Table 4 Summary):</strong> The communalities of variables have been calculated to represent the amount of variation extracted from each variable. Variables like "Does e-banking make participant's transactions easier?" (0.768) and "Will participant suggest others to use e-banking facilities?" (0.755) show high communalities, indicating a significant amount of variance extracted.</li>
+                <li><strong class="text-blue-700">Total Variance Explained (Table 5 Summary):</strong> Four components have eigenvalues greater than 1.000, cumulatively explaining 63.407% of the total variance.</li>
+            </ul>
+            <div class="figure-container">
+                <div id="scree-plot-chart" class="w-full h-auto" style="min-height: 350px;"></div>
+                <p class="text-sm text-gray-600 mt-2">Figure 3: Scree Plot</p>
+            </div>
+            <p class="mb-4 text-gray-700 leading-relaxed">
+                The Scree Plot visually confirms that three components are most crucial for e-banking users, with other variables having limited influence.
+            </p>
+            <p class="mb-4 text-gray-700 leading-relaxed">
+                <strong class="text-blue-700">Rotated Component Matrix (Table 7 Summary of Key Components):</strong>
+            </p>
+            <ul class="list-disc pl-8 mb-4 text-gray-700 leading-relaxed">
+                <li class="mb-2"><strong class="text-purple-700">Component 1:</strong> Strongly correlated with technology adoption (smartphone ownership, internet access), user experience (ease of transactions, willingness to recommend, safety perception), and awareness of banking services/government initiatives.</li>
+                <li class="mb-2"><strong class="text-purple-700">Component 2:</strong> Highly correlated with the presence of ATM facilities and QR codes in shops, and having a bank account – representing banking infrastructure.</li>
+                <li class="mb-2"><strong class="text-purple-700">Component 3 & 4:</strong> Correlated with age, gender, and frequency of bank branch visits, indicating demographic and traditional banking interaction influences.</li>
+            </ul>
+
+            <h3 class="text-2xl font-semibold sub-header">Linear Discriminant Analysis (LDA) - Based on Trust</h3>
+            <p class="mb-4 text-gray-700 leading-relaxed">
+                Linear Discriminant Analysis was utilized to gauge the level of trust in e-banking among rural individuals.
+            </p>
+            <ul class="list-disc pl-8 mb-4 text-gray-700 leading-relaxed">
+                <li class="mb-2"><strong class="text-blue-700">Case Processing Summary (Table 8):</strong> Out of 125 total cases, 121 (or 96.8%) were considered valid for analysis. Four cases (3.2%) were excluded due to missing or out-of-range group codes or missing discriminating variables.</li>
+                <li class="mb-2"><strong class="text-blue-700">Group Statistics (Table 9 Summary):</strong>
+                    <ul class="list-circle pl-6 mt-2">
+                        <li class="mb-1">Participants who <strong class="text-red-600">do not</strong> think e-banking is safe and secure tend to be younger on average (mean age: 2.27), have relatively lower education levels (mean education level: 3.30), a smaller percentage own smartphones (mean: 0.55), and a larger percentage do not have bank accounts (mean: 0.88).</li>
+                        <li class="mb-1">Participants who <strong class="text-green-600">do</strong> think e-banking is safe and secure show opposite trends for these demographics/factors (e.g., mean age: 1.38, mean education level: 5.08, smartphone ownership mean: 0.97, bank account mean: 1.00).</li>
+                    </ul>
+                </li>
+                <li class="mb-2"><strong class="text-blue-700">Tests of Equality of Group Means (Table 10 Summary):</strong> Based on Wilks' Lambda values, almost all independent variables (except gender and frequency of branch visits) have a significant impact on the dependent variable (perception of safety and security), indicating their role in shaping attitudes towards e-banking services.</li>
+                <li class="mb-2"><strong class="text-blue-700">Eigenvalues & Wilks' Lambda (Table 13 & 14 Summary):</strong> Function 1 has an eigenvalue of 2.598, explaining 100.0% of the variance, with a canonical correlation of $0.850$. Wilks' Lambda is 0.278 (p < 0.001), indicating significant differences among the groups in terms of the variables included in Function 1.</li>
+                <li class="mb-2"><strong class="text-blue-700">Standardized Canonical Discriminant Function (Table 15 Summary):</strong>
+                    <ul class="list-circle pl-6 mt-2">
+                        <li class="mb-1"><strong class="text-green-600">Positive Relationship:</strong> Factors such as good internet access (0.309), awareness of banking services (0.163), perceived ease of transactions with e-banking (0.150), willingness to recommend e-banking to others (0.618), and satisfaction with e-banking services (0.315) show a positive relationship with participant responses.</li>
+                        <li class="mb-1"><strong class="text-red-600">Negative Relationship:</strong> Factors such as ownership of a smartphone (0.095, though positive, less impactful than others), availability of ATM facilities in the area (-0.185), and presence of QR codes in shops in the area (-0.233) have a negative relationship or weaker influence.</li>
+                        <li class="mb-1">Age, education level, having a bank account, preferred banking service, preferred transaction mode, number of e-banking transactions per day, frequency of visits to bank branches, awareness of government initiatives, and duration of e-banking use do not show strong correlations with participant responses.</li>
+                    </ul>
+                </li>
+                <li class="mb-2"><strong class="text-blue-700">Structure Matrix (Table 16 Summary):</strong> Variables like the ease of transactions with e-banking (0.649), preferred transaction mode (0.520), good internet connectivity (0.518), education level (0.478), and awareness of banking services (0.411) strongly correlate positively with participants suggesting others to use e-banking facilities. Age (-0.448), gender (-0.038), frequency of visits to bank branches (-0.043), and awareness of government initiatives (0.168) have weaker or negative relationships.</li>
+                <li class="mb-2"><strong class="text-blue-700">Functions at Group Centroids (Table 17):</strong> For participants who think e-banking is not safe and secure (No), the value of Function 1 is $ -2.610 $. For participants who think e-banking is safe and secure (Yes), the value of Function 1 is $ 0.979 $. This clearly indicates the relative positions of the two groups along the canonical discriminant function.</li>
+                <li class="mb-2"><strong class="text-blue-700">Classification Results (Table 21):</strong> The model correctly classified 93.4% of original grouped cases and 88.4% of cross-validated grouped cases. This suggests the model performs well in predicting whether participants think e-banking is safe and secure, particularly for positive perceptions of security, though some overfitting is suggested by the slight drop in accuracy during cross-validation.</li>
+            </ul>
+        </section>
+
+        <!-- Conclusion Section -->
+        <section class="card">
+            <h2 class="text-3xl font-bold section-header">Conclusion</h2>
+            <p class="mb-4 text-gray-700 leading-relaxed">
+                E-banking serves as a significant driver for economic development. To increase its adoption, it should be customised to meet the needs of customers. The current study analysed the level of trust of customers towards e-banking. The study also found that most of the people included in the study are graduates also most of them did not even complete their primary education. Most of the people who were educated and less educated had smartphone and preferred UPI as their mode of transaction due to its ease of use. It is also found that people had good user experience with e-banking and its services, however a very few proportions of people didn't trust the e-banking facilities like UPI and other due to its fraudulent attacks.
+            </p>
+            <p class="mb-4 text-gray-700 leading-relaxed">
+                Overall, there is a good sign of improvement in the usage of e-banking, but it still needs some enhancement, and more trust needs to be developed among the rural people. Also, few proportions of people had enough facility for e-banking (like network, ATM facilities etc) and some specific actions need to be taken to solve the problem.
+            </p>
+        </section>
+
+        <!-- References Section -->
+        <section class="card">
+            <h2 class="text-3xl font-bold section-header">References</h2>
+            <ol class="list-decimal pl-8 text-gray-700 leading-relaxed">
+                <li class="mb-2">Liebana-Cabanillas, F., Muñoz-Leiva, F., & Rejón-Guardia, F. (2012). The determinants of satisfaction with electronic banking. Industrial Management & Data Systems, 113(5), 750-767.</li>
+                <li class="mb-2">Monisha, Bhudhiraja, K., & Kaur, J. (2017). Electronic banking in India: Innovations, challenges, and opportunities. International Journal of Engineering Research & Technology (IJERT), NCIETM-2017 Conference Proceedings. ISSN: 2278-0181.</li>
+                <li class="mb-2">Wadhe, T. (2015). Impact of electronic banking on profitability of commercial banks in India. International Journal in Management and Social Science, 3(5), 2321-1784.</li>
+                <li class="mb-2">Dixit, N., & Datta, S. K. (2010). Acceptance of e-banking among adult customers: An empirical investigation in India. Journal of Internet Banking and Commerce, 15(2).</li>
+                <li class="mb-2">Agarwal, R., Rastogi, S., & Mehrotra, A. (2009). Customers' perspective regarding e-banking in emerging economy. Journal of Retailing and Consumer Services, 16(4), 340-351.</li>
+                <li class="mb-2">Sandhu, S., & Arora, S. (2020). Customers' usage behaviour of e-banking services: Interplay of electronic banking and traditional banking. International Journal of Finance & Economics. <a href="https://doi.org/10.1002/ijfe.2266" target="_blank" class="text-blue-600 hover:underline">https://doi.org/10.1002/ijfe.2266</a></li>
+                <li class="mb-2">Bamoriya, P. S. (2011). Issues & challenges in mobile banking in India: A customers' perspective. Research Journal of Finance and Accounting, 2(2).</li>
+                <li class="mb-2">Rajasekhar, M., Anit, C., & Madhavi, N. (2015). Impact of service quality of SBI's internet banking on its customers in rural India. In Proceedings of the 3rd International Conference on Advances in Engineering Sciences & Applied Mathematics (ICAESAM'2015), March 23-24, 2015, London, UK.</li>
+                <li class="mb-2">Sharma, N. (2012). An empirical study of rural customer's satisfaction from e-banking in India. Journal of Internet Banking and Commerce, 17(3).</li>
+                <li class="mb-2">Bapat, D. (2010). Perceptions on banking service in rural India: An empirical study. International Journal of Rural Management, 6(2), 303-321.</li>
+            </ol>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p class="mb-2">&copy; 2024 by Nishanth Kumar and colleagues Msc. Business Analytics, MAHE, Manipal.</p>
+        <a href="https://github.com/Nishanthk2001/A-Comprehensive-Study-of-use-of-E-Banking-facilities-in-Rural-India/blob/main/Term%20Paper.pdf" target="_blank">Download Term Paper Here</a>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Data for Education Level Bar Chart (Total counts as in original Figure 1, no stacking)
+            const educationData = [
+                { label: "No formal Education", total: 4 },
+                { label: "Up to class 5", total: 8 },
+                { label: "Up to class 10", total: 13 },
+                { label: "Up to class 12", total: 16 },
+                { label: "Graduate", total: 52 },
+                { label: "Post-Graduation and above", total: 29 }
+            ];
+
+            function createSimpleBarChart(data, containerId) { // Renamed function
+                const container = document.getElementById(containerId);
+                if (!container) return;
+                container.innerHTML = ''; // Clear previous content
+
+                const width = container.clientWidth;
+                const height = parseInt(container.style.minHeight);
+                const margin = { top: 60, right: 20, bottom: 100, left: 60 }; // Increased top margin for title/legend
+                const innerWidth = width - margin.left - margin.right;
+                const innerHeight = height - margin.top - margin.bottom;
+
+                const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+                svg.setAttribute("width", width);
+                svg.setAttribute("height", height);
+                svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
+                container.appendChild(svg);
+
+                const g = document.createElementNS("http://www.w3.org/2000/svg", "g");
+                g.setAttribute("transform", `translate(${margin.left},${margin.top})`);
+                svg.appendChild(g);
+
+                const maxTotal = Math.max(...data.map(d => d.total));
+                const yScale = (value) => innerHeight - (value / maxTotal) * innerHeight;
+                const xScale = (index) => (index * innerWidth) / data.length;
+                const barWidth = innerWidth / data.length * 0.7; // Adjusted bar width
+
+                // Bars
+                data.forEach((d, i) => {
+                    const xPos = xScale(i) + (innerWidth / data.length - barWidth) / 2; // Center bar within its band
+                    const bar = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+                    bar.setAttribute("x", xPos);
+                    bar.setAttribute("y", yScale(d.total));
+                    bar.setAttribute("width", barWidth);
+                    bar.setAttribute("height", innerHeight - yScale(d.total));
+                    bar.setAttribute("class", "bar-chart-bar");
+                    bar.setAttribute("rx", "5"); /* Rounded corners for bars */
+                    bar.setAttribute("ry", "5");
+                    g.appendChild(bar);
+
+                    // Value text on top of bars
+                    const textValue = document.createElementNS("http://www.w3.org/2000/svg", "text");
+                    textValue.setAttribute("x", xPos + barWidth / 2);
+                    textValue.setAttribute("y", yScale(d.total) - 5);
+                    textValue.setAttribute("text-anchor", "middle");
+                    textValue.setAttribute("font-size", "13");
+                    textValue.setAttribute("font-weight", "bold");
+                    textValue.setAttribute("fill", "#2d3748");
+                    textValue.textContent = d.total;
+                    g.appendChild(textValue);
+                });
+
+                // X-axis labels (rotated)
+                data.forEach((d, i) => {
+                    const textLabel = document.createElementNS("http://www.w3.org/2000/svg", "text");
+                    textLabel.setAttribute("x", xScale(i) + (innerWidth / data.length / 2)); // Center label with band
+                    textLabel.setAttribute("y", innerHeight + 15);
+                    textLabel.setAttribute("text-anchor", "end");
+                    textLabel.setAttribute("font-size", "12");
+                    textLabel.setAttribute("fill", "#4a5568");
+                    textLabel.textContent = d.label;
+                    textLabel.setAttribute("transform", `rotate(-45 ${xScale(i) + (innerWidth / data.length / 2)},${innerHeight + 15})`);
+                    g.appendChild(textLabel);
+                });
+
+                // Y-axis
+                const yAxisLine = document.createElementNS("http://www.w3.org/2000/svg", "line");
+                yAxisLine.setAttribute("x1", 0);
+                yAxisLine.setAttribute("y1", 0);
+                yAxisLine.setAttribute("x2", 0);
+                yAxisLine.setAttribute("y2", innerHeight);
+                yAxisLine.setAttribute("stroke", "#cbd5e0");
+                g.appendChild(yAxisLine);
+
+                // Y-axis labels
+                for (let i = 0; i <= maxTotal; i += Math.max(10, Math.round(maxTotal / 5))) {
+                    const yLabel = document.createElementNS("http://www.w3.org/2000/svg", "text");
+                    yLabel.setAttribute("x", -10);
+                    yLabel.setAttribute("y", yScale(i) + 4);
+                    yLabel.setAttribute("text-anchor", "end");
+                    yLabel.setAttribute("font-size", "12");
+                    yLabel.setAttribute("fill", "#4a5568");
+                    yLabel.textContent = i;
+                    g.appendChild(yLabel);
+                }
+
+                // X-axis line
+                const xAxisLine = document.createElementNS("http://www.w3.org/2000/svg", "line");
+                xAxisLine.setAttribute("x1", 0);
+                xAxisLine.setAttribute("y1", innerHeight);
+                xAxisLine.setAttribute("x2", innerWidth);
+                xAxisLine.setAttribute("y2", innerHeight);
+                xAxisLine.setAttribute("stroke", "#cbd5e0");
+                g.appendChild(xAxisLine);
+
+                // Add axis titles
+                const yAxisTitle = document.createElementNS("http://www.w3.org/2000/svg", "text");
+                yAxisTitle.setAttribute("x", -margin.left + 15);
+                yAxisTitle.setAttribute("y", innerHeight / 2);
+                yAxisTitle.setAttribute("text-anchor", "middle");
+                yAxisTitle.setAttribute("transform", `rotate(-90 ${-margin.left + 15},${innerHeight / 2})`);
+                yAxisTitle.setAttribute("font-size", "14");
+                yAxisTitle.setAttribute("fill", "#2d3748");
+                yAxisTitle.textContent = "Count";
+                g.appendChild(yAxisTitle);
+
+                const xAxisTitle = document.createElementNS("http://www.w3.org/2000/svg", "text");
+                xAxisTitle.setAttribute("x", innerWidth / 2);
+                xAxisTitle.setAttribute("y", height - 5);
+                xAxisTitle.setAttribute("text-anchor", "middle");
+                xAxisTitle.setAttribute("font-size", "14");
+                xAxisTitle.setAttribute("fill", "#2d3748");
+                xAxisTitle.textContent = "Education level of participant";
+                g.appendChild(xAxisTitle);
+
+                // Chart title
+                const chartTitle = document.createElementNS("http://www.w3.org/2000/svg", "text");
+                chartTitle.setAttribute("x", innerWidth / 2);
+                chartTitle.setAttribute("y", -margin.top / 2); /* Adjusted position */
+                chartTitle.setAttribute("text-anchor", "middle");
+                chartTitle.setAttribute("class", "chart-title");
+                chartTitle.textContent = "Simple Bar Count of Education level of participant";
+                g.appendChild(chartTitle);
+
+                // No legend for simple bar chart
+            }
+
+
+            // Data for Most Preferred Banking Service Pie Chart (Estimated from original image)
+            // Colors from a vibrant palette: blue, green, purple, orange, red
+            const pieData = [
+                { label: "None", value: 16, color: "#4299e1" }, // Blue
+                { label: "ATM", value: 9, color: "#38a169" },    // Green
+                { label: "Debit/Credit Cards", value: 11, color: "#805ad5" }, // Purple
+                { label: "Net Banking", value: 6, color: "#ed8936" }, // Orange
+                { label: "UPIs", value: 58, color: "#e53e3e" }    // Red (most prominent)
+            ];
+
+            function createPieChart(data, containerId) {
+                const container = document.getElementById(containerId);
+                if (!container) return;
+                container.innerHTML = ''; // Clear previous content
+
+                const width = container.clientWidth;
+                const height = parseInt(container.style.minHeight);
+                const radius = Math.min(width, height) / 2 - 40; // Adjusted radius
+
+                const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+                svg.setAttribute("width", width);
+                svg.setAttribute("height", height);
+                svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
+                container.appendChild(svg);
+
+                const g = document.createElementNS("http://www.w3.org/2000/svg", "g");
+                g.setAttribute("transform", `translate(${width / 2},${height / 2})`);
+                svg.appendChild(g);
+
+                let total = data.reduce((sum, d) => sum + d.value, 0);
+                let currentAngle = 0;
+
+                data.forEach(d => {
+                    const startAngle = currentAngle;
+                    const endAngle = currentAngle + (d.value / total) * 2 * Math.PI;
+
+                    const p1 = { x: radius * Math.cos(startAngle), y: radius * Math.sin(startAngle) };
+                    const p2 = { x: radius * Math.cos(endAngle), y: radius * Math.sin(endAngle) };
+
+                    const largeArcFlag = (endAngle - startAngle) > Math.PI ? 1 : 0;
+
+                    const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+                    path.setAttribute("d", `M0,0 L${p1.x},${p1.y} A${radius},${radius} 0 ${largeArcFlag},1 ${p2.x},${p2.y} Z`);
+                    path.setAttribute("fill", d.color);
+                    path.setAttribute("class", "pie-chart-slice");
+                    g.appendChild(path);
+
+                    // Add percentage labels
+                    const midAngle = (startAngle + endAngle) / 2;
+                    const labelRadius = radius * 0.7; // Position label slightly inside
+                    const labelX = labelRadius * Math.cos(midAngle);
+                    const labelY = labelRadius * Math.sin(midAngle);
+
+                    const percentage = ((d.value / total) * 100).toFixed(1);
+                    if (percentage > 5) { // Only show percentage for larger slices
+                        const text = document.createElementNS("http://www.w3.org/2000/svg", "text");
+                        text.setAttribute("x", labelX);
+                        text.setAttribute("y", labelY);
+                        text.setAttribute("text-anchor", "middle");
+                        text.setAttribute("fill", "white");
+                        text.setAttribute("font-size", "14");
+                        text.setAttribute("font-weight", "bold");
+                        text.textContent = `${percentage}%`;
+                        g.appendChild(text);
+                    }
+
+                    currentAngle = endAngle;
+                });
+
+                // Legend
+                const legendX = radius + 50; // Position legend to the right
+                const legendY = -height / 2 + 20; // Top of the SVG
+                data.forEach((d, i) => {
+                    const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+                    rect.setAttribute("x", legendX);
+                    rect.setAttribute("y", legendY + i * 25);
+                    rect.setAttribute("width", 18);
+                    rect.setAttribute("height", 18);
+                    rect.setAttribute("fill", d.color);
+                    rect.setAttribute("rx", "3");
+                    rect.setAttribute("ry", "3");
+                    g.appendChild(rect);
+
+                    const text = document.createElementNS("http://www.w3.org/2000/svg", "text");
+                    text.setAttribute("x", legendX + 25);
+                    text.setAttribute("y", legendY + i * 25 + 14);
+                    text.setAttribute("font-size", "14");
+                    text.setAttribute("fill", "#2d3748");
+                    text.textContent = d.label;
+                    g.appendChild(text);
+                });
+
+                // Chart title
+                const chartTitle = document.createElementNS("http://www.w3.org/2000/svg", "text");
+                chartTitle.setAttribute("x", 0);
+                chartTitle.setAttribute("y", -height / 2 + 20); // Position title at the top
+                chartTitle.setAttribute("text-anchor", "middle");
+                chartTitle.setAttribute("class", "chart-title");
+                chartTitle.textContent = "Most preferred banking service";
+                svg.appendChild(chartTitle);
+            }
+
+            // Data for Scree Plot
+            const screeData = [
+                { component: 1, eigenvalue: 8.405 },
+                { component: 2, eigenvalue: 1.416 },
+                { component: 3, eigenvalue: 1.185 },
+                { component: 4, eigenvalue: 1.041 },
+                { component: 5, eigenvalue: 0.909 },
+                { component: 6, eigenvalue: 0.873 },
+                { component: 7, eigenvalue: 0.690 },
+                { component: 8, eigenvalue: 0.641 },
+                { component: 9, eigenvalue: 0.585 },
+                { component: 10, eigenvalue: 0.548 },
+                { component: 11, eigenvalue: 0.485 },
+                { component: 12, eigenvalue: 0.414 },
+                { component: 13, eigenvalue: 0.359 },
+                { component: 14, eigenvalue: 0.336 },
+                { component: 15, eigenvalue: 0.288 },
+                { component: 16, eigenvalue: 0.267 },
+                { component: 17, eigenvalue: 0.231 },
+                { component: 18, eigenvalue: 0.191 },
+                { component: 19, eigenvalue: 0.136 }
+            ];
+
+            function createScreePlot(data, containerId) {
+                const container = document.getElementById(containerId);
+                if (!container) return;
+                container.innerHTML = ''; // Clear previous content
+
+                const width = container.clientWidth;
+                const height = 350; /* Slightly increased height */
+                const margin = { top: 30, right: 20, bottom: 50, left: 60 }; /* Increased left margin for labels */
+                const innerWidth = width - margin.left - margin.right;
+                const innerHeight = height - margin.top - margin.bottom;
+
+                const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+                svg.setAttribute("width", width);
+                svg.setAttribute("height", height);
+                svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
+                container.appendChild(svg);
+
+                const g = document.createElementNS("http://www.w3.org/2000/svg", "g");
+                g.setAttribute("transform", `translate(${margin.left},${margin.top})`);
+                svg.appendChild(g);
+
+                const maxEigenvalue = Math.max(...data.map(d => d.eigenvalue));
+                const xScale = (index) => (index * innerWidth) / (data.length - 1);
+                const yScale = (value) => innerHeight - (value / maxEigenvalue) * innerHeight;
+
+                // Line path
+                let pathD = `M${xScale(0)},${yScale(data[0].eigenvalue)}`;
+                for (let i = 1; i < data.length; i++) {
+                    pathD += ` L${xScale(i)},${yScale(data[i].eigenvalue)}`;
+                }
+
+                const linePath = document.createElementNS("http://www.w3.org/2000/svg", "path");
+                linePath.setAttribute("d", pathD);
+                linePath.setAttribute("class", "scree-plot-line");
+                g.appendChild(linePath);
+
+                // Points
+                data.forEach((d, i) => {
+                    const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+                    circle.setAttribute("cx", xScale(i));
+                    circle.setAttribute("cy", yScale(d.eigenvalue));
+                    circle.setAttribute("r", 4);
+                    circle.setAttribute("class", "scree-plot-point");
+                    g.appendChild(circle);
+
+                    // Add text for significant points (e.g., above eigenvalue 1)
+                    if (d.eigenvalue >= 1) {
+                        const text = document.createElementNS("http://www.w3.org/2000/svg", "text");
+                        text.setAttribute("x", xScale(i));
+                        text.setAttribute("y", yScale(d.eigenvalue) - 10);
+                        text.setAttribute("text-anchor", "middle");
+                        text.setAttribute("font-size", "12");
+                        text.setAttribute("fill", "#4a5568");
+                        text.textContent = d.eigenvalue.toFixed(2);
+                        g.appendChild(text);
+                    }
+                });
+
+                // X-axis
+                const xAxisLine = document.createElementNS("http://www.w3.org/2000/svg", "line");
+                xAxisLine.setAttribute("x1", 0);
+                xAxisLine.setAttribute("y1", innerHeight);
+                xAxisLine.setAttribute("x2", innerWidth);
+                xAxisLine.setAttribute("y2", innerHeight);
+                xAxisLine.setAttribute("stroke", "#cbd5e0");
+                g.appendChild(xAxisLine);
+
+                // X-axis labels
+                for (let i = 1; i <= data.length; i += 1) { // Label every component
+                    const xLabel = document.createElementNS("http://www.w3.org/2000/svg", "text");
+                    xLabel.setAttribute("x", xScale(i - 1));
+                    xLabel.setAttribute("y", innerHeight + 20);
+                    xLabel.setAttribute("text-anchor", "middle");
+                    xLabel.setAttribute("font-size", "12");
+                    xLabel.setAttribute("fill", "#4a5568");
+                    xLabel.textContent = i;
+                    g.appendChild(xLabel);
+                }
+
+                // Y-axis
+                const yAxisLine = document.createElementNS("http://www.w3.org/2000/svg", "line");
+                yAxisLine.setAttribute("x1", 0);
+                yAxisLine.setAttribute("y1", 0);
+                yAxisLine.setAttribute("x2", 0);
+                yAxisLine.setAttribute("y2", innerHeight);
+                yAxisLine.setAttribute("stroke", "#cbd5e0");
+                g.appendChild(yAxisLine);
+
+                // Y-axis labels
+                for (let i = 0; i <= maxEigenvalue; i += Math.ceil(maxEigenvalue / 4)) {
+                    const yLabel = document.createElementNS("http://www.w3.org/2000/svg", "text");
+                    yLabel.setAttribute("x", -10);
+                    yLabel.setAttribute("y", yScale(i) + 4);
+                    yLabel.setAttribute("text-anchor", "end");
+                    yLabel.setAttribute("font-size", "12");
+                    yLabel.setAttribute("fill", "#4a5568");
+                    yLabel.textContent = i.toFixed(0);
+                    g.appendChild(yLabel);
+                }
+
+                // Add axis titles
+                const yAxisTitle = document.createElementNS("http://www.w3.org/2000/svg", "text");
+                yAxisTitle.setAttribute("x", -margin.left + 15);
+                yAxisTitle.setAttribute("y", innerHeight / 2);
+                yAxisTitle.setAttribute("text-anchor", "middle");
+                yAxisTitle.setAttribute("transform", `rotate(-90 ${-margin.left + 15},${innerHeight / 2})`);
+                yAxisTitle.setAttribute("font-size", "14");
+                yAxisTitle.setAttribute("fill", "#2d3748");
+                yAxisTitle.textContent = "Eigenvalue";
+                g.appendChild(yAxisTitle);
+
+                const xAxisTitle = document.createElementNS("http://www.w3.org/2000/svg", "text");
+                xAxisTitle.setAttribute("x", innerWidth / 2);
+                xAxisTitle.setAttribute("y", height - 5);
+                xAxisTitle.setAttribute("text-anchor", "middle");
+                xAxisTitle.setAttribute("font-size", "14");
+                xAxisTitle.setAttribute("fill", "#2d3748");
+                xAxisTitle.textContent = "Component Number";
+                g.appendChild(xAxisTitle);
+
+                // Chart title
+                const chartTitle = document.createElementNS("http://www.w3.org/2000/svg", "text");
+                chartTitle.setAttribute("x", innerWidth / 2);
+                chartTitle.setAttribute("y", -5);
+                chartTitle.setAttribute("text-anchor", "middle");
+                chartTitle.setAttribute("class", "chart-title");
+                chartTitle.textContent = "Scree Plot";
+                g.appendChild(chartTitle);
+            }
+
+            // Call functions to create charts
+            createSimpleBarChart(educationData, "education-bar-chart");
+            createPieChart(pieData, "preferred-banking-pie-chart");
+            createScreePlot(screeData, "scree-plot-chart");
+
+            // Handle responsiveness on resize for SVG charts (simple redraw)
+            window.addEventListener('resize', () => {
+                createSimpleBarChart(educationData, "education-bar-chart");
+                createPieChart(pieData, "preferred-banking-pie-chart");
+                createScreePlot(screeData, "scree-plot-chart");
+            });
+        });
+    </script>
+</body>
+</html>
